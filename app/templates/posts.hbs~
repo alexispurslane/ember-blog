@@ -1,0 +1,15 @@
+{{#each controllers.filteredContent as |post|}}
+{{#paper-card}}
+  {{#paper-card-content}}
+    <h2>{{post.title}}</h2>
+    <h4>{{post.timestamp}}</h4>
+    <p>
+      {{post.description}}
+    </p>
+  {{/paper-card-content}}
+  <div class="md-actions" layout="row" layout-align="end center">
+    {{#paper-button action="view" param=post.id primary=true}}View{{/paper-button}}
+    {{#paper-button action="edit" param=post.id warn=true}}Edit{{/paper-button}}
+  </div>
+{{/paper-card}}
+{{/each}}

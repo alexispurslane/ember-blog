@@ -1,0 +1,14 @@
+@import 'ember-paper';
+
+.right {
+  position: absolute;
+  top: 6px;
+  right: 12px;
+}
+
+blockquote {
+  border-left: 3px solid rgba(0,0,0,.12);
+  font-style: italic;
+  margin-left: 0;
+  padding-left: 16px;
+}

@@ -1,0 +1,8 @@
+#!/usr/local/bin/bash
+
+rm -rf tmp node_modules bower_components dist
+
+npm cache clear
+bower cache clean
+npm install
+bower install

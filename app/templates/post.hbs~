@@ -1,0 +1,5 @@
+<h1>{{model.title}}</h1>
+<blockquote>{{model.description}}</blockquote>
+<h4>{{model.timestamp}}</h4>
+<hr/>
+<p>{{model.body}}</p>

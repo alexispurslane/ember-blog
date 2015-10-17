@@ -1,0 +1,8 @@
+import Mirage, {faker} from 'ember-cli-mirage';
+
+export default Mirage.Factory.extend({
+    title: faker.hacker.phrase,
+    body: faker.lorem.paragraphs,
+    description: faker.hacker.phrase,
+    timestamp: faker.date.recent
+});

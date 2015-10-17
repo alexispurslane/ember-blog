@@ -1,0 +1,10 @@
+import Ember from 'ember';
+
+export default Ember.Controller.extend({
+    actions: {
+	view(post) {
+	    debugger;
+	    this.transitionToRoute('post', this.store.findRecord('post', parseInt(post)));
+	}
+    }
+});
