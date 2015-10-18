@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import moment from 'moment';
 
 export default Ember.Controller.extend({
     title: '',
@@ -16,7 +17,7 @@ export default Ember.Controller.extend({
 			return this.get("description");
 		    }
 		})(),
-		timestamp: new Date()
+		timestamp: moment().format('MMMM Do YYYY, h:mm a')
 	    }).save();
 	    
 	    this.set('title', '');
