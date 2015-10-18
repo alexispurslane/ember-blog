@@ -21,14 +21,9 @@
         {{#paper-button target=toggle action="toggleMenu" icon-button=true}}{{paper-icon icon="menu"}}{{/paper-button}}
         {{/paper-sidenav-toggle}}
         <span class="md-breadcrumb-page">{{currentPathCaps}}</span>
-        {{#paper-button action="search" icon-button=true class="right"}}{{paper-icon icon="search"}}{{/paper-button}}
       </div>
     {{/paper-toolbar}}
     {{#paper-content class="md-padding"}}
-    {{#if searchOn}}
-      {{input value=search id="searchbar" placeholder="Search" action="updateSearch" on="key-press"}}
-    {{/if}}
-
     {{outlet}}
     {{/paper-content}}
   </div>

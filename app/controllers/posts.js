@@ -10,6 +10,9 @@ export default Ember.Controller.extend({
 	view(post) {
 	    console.log(this.get('controllers.application'));
 	    this.transitionToRoute('post', this.store.findRecord('post', parseInt(post)));
+	},
+	edit(post) {
+	    this.transitionToRoute('edit', this.store.findRecord('post', parseInt(post)));
 	}
     }
 });

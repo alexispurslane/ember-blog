@@ -16,7 +16,7 @@ export default Ember.Controller.extend({
 			return this.get("description");
 		    }
 		})()
-	    });
+	    }).save();
 
 	    this.transitionToRoute('posts');
 	},
