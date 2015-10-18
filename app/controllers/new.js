@@ -15,9 +15,13 @@ export default Ember.Controller.extend({
 		    } else {
 			return this.get("description");
 		    }
-		})()
+		})(),
+		timestamp: new Date()
 	    }).save();
-
+	    
+	    this.set('title', '');
+	    this.set('body', '');
+	    this.set('description', '');
 	    this.transitionToRoute('posts');
 	},
 	cancel() {

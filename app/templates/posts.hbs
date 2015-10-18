@@ -8,8 +8,9 @@
     </p>
   {{/paper-card-content}}
   <div class="md-actions" layout="row" layout-align="end center">
-    {{#paper-button action="view" param=post.id primary=true}}View{{/paper-button}}
-    {{#paper-button action="edit" param=post.id warn=true}}Edit{{/paper-button}}
+    {{#paper-button action="view" param=post primary=true}}View{{/paper-button}}
+    {{#paper-button action="edit" param=post}}Edit{{/paper-button}}
+    {{#paper-button action="delete" param=post warn=true}}Delete{{/paper-button}}
   </div>
 {{/paper-card}}
 {{/each}}

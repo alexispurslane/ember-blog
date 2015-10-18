@@ -7,12 +7,15 @@ export default Ember.Controller.extend({
 	return m;
     }.property('controllers.application.search'),
     actions: {
+	delete(post) {
+	    post.deleteRecord();
+	    post.save();
+	},
 	view(post) {
-	    console.log(this.get('controllers.application'));
-	    this.transitionToRoute('post', this.store.findRecord('post', parseInt(post)));
+	    this.transitionToRoute('post', post);
 	},
 	edit(post) {
-	    this.transitionToRoute('edit', this.store.findRecord('post', parseInt(post)));
+	    this.transitionToRoute('edit', post);
 	}
     }
 });
