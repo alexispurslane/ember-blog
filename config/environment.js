@@ -11,10 +11,11 @@ module.exports = function(environment) {
 	    'style-src': "'self' 'unsafe-inline'",
 	    'script-src': "'self'",
 	    'font-src': "'self' fonts.gstatic.com",
-	    'connect-src': "'self'",
+	    'connect-src': "'self' wss://*.firebaseio.com wss://s-dal5-nss-27.firebaseio.com",
 	    'img-src': "'self' data:",
 	    'media-src': "'self'"
 	},
+	firebase: 'https://first-ember-app.firebaseio.com/',
 	EmberENV: {
 	    FEATURES: {
 		// Here you can enable experimental features on an ember canary build

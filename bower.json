@@ -1,29 +1,30 @@
 {
-    "name": "super-blog",
-    "dependencies": {
-	"ember": "~2.1.0",
-	"ember-cli-shims": "ember-cli/ember-cli-shims#0.0.3",
-	"ember-cli-test-loader": "ember-cli-test-loader#0.1.3",
-	"ember-data": "~2.1.0",
-	"ember-load-initializers": "ember-cli/ember-load-initializers#0.1.5",
-	"ember-qunit": "0.4.9",
-	"ember-qunit-notifications": "0.0.7",
-	"ember-resolver": "~0.1.18",
-	"jquery": "^1.11.3",
-	"loader.js": "ember-cli/loader.js#3.2.1",
-	"qunit": "~1.18.0",
-	"localforage": "~1.2.1",
-	"blob-polyfill": "~1.0.20150320",
-	"pretender": "~0.10.1",
-	"lodash": "~3.7.0",
-	"Faker": "~3.0.0",
-	"hammerjs": "~2.0.4",
-	"matchMedia": "0.2.0"
-    },
-    "resolutions": {
-	"ember": "2.0.0"
-    },
-    "devDependencies": {
-	"ember-localstorage-adapter": "~0.5.4"
-    }
+  "name": "super-blog",
+  "dependencies": {
+    "ember": "~2.1.0",
+    "ember-cli-shims": "ember-cli/ember-cli-shims#0.0.3",
+    "ember-cli-test-loader": "ember-cli-test-loader#0.1.3",
+    "ember-data": "~2.1.0",
+    "ember-load-initializers": "ember-cli/ember-load-initializers#0.1.5",
+    "ember-qunit": "0.4.9",
+    "ember-qunit-notifications": "0.0.7",
+    "ember-resolver": "~0.1.18",
+    "jquery": "^1.11.3",
+    "loader.js": "ember-cli/loader.js#3.2.1",
+    "qunit": "~1.18.0",
+    "localforage": "~1.2.1",
+    "blob-polyfill": "~1.0.20150320",
+    "pretender": "~0.10.1",
+    "lodash": "~3.7.0",
+    "Faker": "~3.0.0",
+    "hammerjs": "~2.0.4",
+    "matchMedia": "0.2.0",
+    "firebase": "^2.1.0"
+  },
+  "resolutions": {
+    "ember": "2.0.0"
+  },
+  "devDependencies": {
+    "ember-localstorage-adapter": "~0.5.4"
+  }
 }

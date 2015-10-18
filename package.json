@@ -41,6 +41,7 @@
     "ember-local-storage": "0.0.10",
     "ember-localforage-adapter": "2.1.1",
     "ember-localstorage-adapter": "0.5.4",
-    "ember-paper": "0.2.8"
+    "ember-paper": "0.2.8",
+    "emberfire": "1.6.0"
   }
 }
