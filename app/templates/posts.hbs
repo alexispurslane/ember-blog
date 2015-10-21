@@ -1,8 +1,12 @@
-{{#each model as |post|}}
+{{#each postsByDate as |posts|}}
+
+<h3 style="color: #616161; line-height: 1.5; font-size: 81.25%;">{{posts.value}}</h3>
+
+{{#each posts.items as |post|}}
+<div style="margin-left: 30px; margin-right: 30px;">
 {{#paper-card}}
   {{#paper-card-content}}
     <h2>{{post.title}}</h2>
-    <h4>{{post.timestamp}}</h4>
     <p>
       {{post.description}}
     </p>
@@ -13,9 +17,11 @@
     {{#paper-button action="delete" param=post warn=true}}Delete{{/paper-button}}
   </div>
 {{/paper-card}}
+</div>
 {{else}}
   <h2 style="color: grey; text-align: center">It looks like you don't have any posts!
     Go to the '+' button to create some.</h2>
+{{/each}}
 {{/each}}
 
 <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">

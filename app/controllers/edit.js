@@ -7,6 +7,9 @@ export default Ember.Controller.extend({
 	    newPost.set('timestamp', moment().format('MMMM Do YYYY, h:mm a'));
 	    newPost.save();
 	    this.transitionToRoute('posts');
+	},
+	cancel() {
+	    this.transitionToRoute('posts');
 	}
     }
 });

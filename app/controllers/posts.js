@@ -1,11 +1,8 @@
 import Ember from 'ember';
+import groupBy from 'ember-group-by';
 
 export default Ember.Controller.extend({
-    needs: ['application'],
-    filteredContent: function () {
-	let m = this.currentModel.filter((post) => post.title.includes(this.get('search')));
-	return m;
-    }.property('controllers.application.search'),
+    postsByDate: groupBy('model', 'timestamp'),
     actions: {
 	delete(post) {
 	    post.deleteRecord();

@@ -3,6 +3,9 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
     searchOn: false,
     search: '',
+    currentTime: function () {
+	return moment().format('MMMM Do YYYY');
+    }.property(),
     currentPathCaps: function () {
 	this.set('searchOn', false);
 	let string = this.get('currentPath');

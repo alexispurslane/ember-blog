@@ -17,7 +17,7 @@ export default Ember.Controller.extend({
 			return this.get("description");
 		    }
 		})(),
-		timestamp: moment().format('MMMM Do YYYY, h:mm a')
+		timestamp: moment().format('MMMM Do YYYY')
 	    }).save();
 	    
 	    this.set('title', '');
