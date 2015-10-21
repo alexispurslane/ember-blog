@@ -1,22 +1,33 @@
+<div style="width: 250px">
+  {{#paper-select disabled=disableSelect model=orderState}}
+    {{#paper-option value="Sort by Date Descending"}}
+    Sort by Date Descending
+    {{/paper-option}}
+    {{#paper-option value="Sort by Date Ascending"}}
+    Sort by Date Ascending
+    {{/paper-option}}
+  {{/paper-select}}
+</div>
+
 {{#each postsByDateSorted as |posts|}}
 
 <h3 style="color: #616161; line-height: 1.5; font-size: 81.25%;">{{posts.value}}</h3>
 
 {{#each posts.items as |post|}}
 <div style="margin-left: 30px; margin-right: 30px;">
-{{#paper-card}}
-  {{#paper-card-content}}
-    <h2>{{post.title}}</h2>
-    <p>
-      {{post.description}}
-    </p>
-  {{/paper-card-content}}
-  <div class="md-actions" layout="row" layout-align="end center">
-    {{#paper-button action="view" param=post primary=true}}View{{/paper-button}}
-    {{#paper-button action="edit" param=post}}Edit{{/paper-button}}
-    {{#paper-button action="delete" param=post warn=true}}Delete{{/paper-button}}
-  </div>
-{{/paper-card}}
+  {{#paper-card}}
+    {{#paper-card-content}}
+      <h2>{{post.title}}</h2>
+      <p>
+        {{post.description}}
+      </p>
+    {{/paper-card-content}}
+    <div class="md-actions" layout="row" layout-align="end center">
+      {{#paper-button action="view" param=post primary=true}}View{{/paper-button}}
+      {{#paper-button action="edit" param=post}}Edit{{/paper-button}}
+      {{#paper-button action="delete" param=post warn=true}}Delete{{/paper-button}}
+    </div>
+  {{/paper-card}}
 </div>
 {{else}}
   <h2 style="color: grey; text-align: center">It looks like you don't have any posts!
