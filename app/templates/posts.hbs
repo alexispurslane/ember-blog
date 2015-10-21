@@ -13,4 +13,13 @@
     {{#paper-button action="delete" param=post warn=true}}Delete{{/paper-button}}
   </div>
 {{/paper-card}}
+{{else}}
+  <h2 style="color: grey; text-align: center">It looks like you don't have any posts!
+    Go to the '+' button to create some.</h2>
 {{/each}}
+
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+  <a class="btn-floating btn-large red">
+    {{#link-to "new" class="large material-icons" tagName="i"}}add{{/link-to}}
+  </a>
+</div>

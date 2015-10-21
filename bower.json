@@ -29,6 +29,7 @@
     "ember": "^2.0.0"
   },
   "devDependencies": {
-    "ember-localstorage-adapter": "~0.5.4"
+    "ember-localstorage-adapter": "~0.5.4",
+    "Materialize": "materialize#~0.97.1"
   }
 }

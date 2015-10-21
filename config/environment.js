@@ -9,7 +9,7 @@ module.exports = function(environment) {
 	contentSecurityPolicy: {
 	    'default-src': "'none'",
 	    'style-src': "'self' 'unsafe-inline'",
-	    'script-src': "'self'",
+	    'script-src': "'unsafe-inline' 'self'",
 	    'font-src': "'self' fonts.gstatic.com",
 	    'connect-src': "'self' wss://*.firebaseio.com wss://s-dal5-nss-27.firebaseio.com",
 	    'img-src': "'self' data:",
